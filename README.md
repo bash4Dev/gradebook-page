@@ -11,8 +11,6 @@
 - Example Code
     - average = sum of all scores / total number of scores
 
-- A couple of function calls have been provided for you so you can test out your code.
-
 
 ## Step two
 
