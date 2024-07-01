@@ -1,10 +1,17 @@
 // Step 1
+function getAverage(scores) {
+    let total = 0;
+    
+    for (let score of scores) {
+        // Add each score to the total
+        total = total + score;
+    }
+    // Calculating the average
+    let average = total / scores.length;
+    return average;
+}
 
-// function getAverage(scores) {
-// }
-
-//   console.log(getAverage([92, 88, 12, 77, 57, 100, 67, 38, 97, 89]));
-//   console.log(getAverage([45, 87, 98, 100, 86, 94, 67, 88, 94, 95]));
+console.log(getAverage([12, 57, 67, 38]));
 
 // Step 2
 
@@ -27,19 +34,19 @@ function getGrade(score) {
 
 // Here are some function calls for testing
 
-console.log(getGrade(96));
-console.log(getGrade(82));
-console.log(getGrade(56));
+console.log(getGrade(76));
+console.log(getGrade(100));
+console.log(getGrade(46));
 
 // Step 3
 
-// function hasPassingGrade(score) {
+function hasPassingGrade(score) {
+  return getGrade(score) !== "F";
+}
 
-// }
-
-// console.log(hasPassingGrade(100));
-// console.log(hasPassingGrade(53));
-// console.log(hasPassingGrade(87));
+console.log(hasPassingGrade(100));
+console.log(hasPassingGrade(53));
+console.log(hasPassingGrade(87));
 
 // Step 4
 
