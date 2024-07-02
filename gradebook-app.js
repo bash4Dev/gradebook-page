@@ -52,7 +52,11 @@ console.log(hasPassingGrade(87));
 
 function studentMsg(totalScores, studentScore) {
   let sum = 0;
-  sum = sum + studentScore;
+
+  for (let score of totalScores) {
+    sum += score;
+  }
+
   let classAverage = sum / totalScores.length;
 
   if (getGrade(studentScore) !== "F") {
@@ -61,4 +65,4 @@ function studentMsg(totalScores, studentScore) {
     return `Class average: ${classAverage}. \nYour grade: ${studentScore}. You failed the course.`
   }
 }
-console.log(studentMsg([92, 88, 12, 77, 57, 100, 67, 38, 97, 89], 37));
+console.log(studentMsg([92, 88, 12, 77, 57, 100, 67, 38, 97, 89], 85));
